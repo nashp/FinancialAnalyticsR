@@ -1,0 +1,40 @@
+Date: December 8, 2016
+
+Welcome to Financial Analytics with R: Building a Laptop Laboratory for Data Science
+by Mark J. Bennett and Dirk L. Hugen from Cambridge University Press!
+
+It is best to send inquiries directly to us at mark-j-bennett@uiowa.edu or dirklhugen@gmail.com
+rather than Cambridge University Press.
+
+Recently discovered errata:
+p. 90  Exercise 5.2 sigmaZ should be .0007
+p. 130 line 8 'pass' should be 'passer'
+p. 158 Paragraph 3 5th formula demonimator sigma_e^2 should be (sigma_e)^2.
+p. 158 Paragraph 3 Cov(X,Y) sigma_XY = sigma_X sigmaY rho should be Cov(X,Y) = sigma_XY = sigma_X sigmaY rho.
+p. 200 'Formula 7.3' should be 'Formula 9.3'
+p. 224 'Sigma^T = Omega 2' lines from bottom should be 'Sigma^(-1) = Omega'.
+p. 271 Figure 11.6 has duplicated arcs from state -1 to states -.75 and -.50
+       that should be combined into single arc named 'exit position expected gain'
+       and 'exit position expected loss'.
+p. 271 Figure 11.6 has duplicated arcs from state +1 to states +.75 and +.50
+       that should be combined into single arc named 'exit position expected gain'
+       and 'exit position expected loss'.
+
+The code for each Chapter is in a file called code.R.
+Associated datasets are also contained in each directory. 
+
+Ticker symbols contained in literal constants in the book do become obsolete occasionally.
+The most common event that causes this is when these publicly traded companies are acquired.
+The tseries package routine get.hist.quote() will no longer quote prices
+after this happens even though the prices existed up until the acquisition.
+
+In order to approximate the book results, it is best to replace the ticker that
+was absorbed (and no longer quoted) with the surviving ticker. During 2016 these
+ticker changes occurred and the code.R files have been updated accordingly.
+
+http://money.cnn.com/news/newsfeeds/articles/globenewswire/6172457.htm is about PCP -> BRK/B.
+
+http://www.kindermorgan.com/content/docs/KMI_Summary_Transaction_Information.pdf is about KMP -> KMI.
+
+http://investors.danaher.com/2015-08-31-Danaher-Completes-Acquisition-Of-Pall-Corporation is about PLL -> DHR.
+
